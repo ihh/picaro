@@ -11,9 +11,9 @@
   },
   "adjectives": {
     "gaseous": {
-      "actions": [
+      "rules": [
        {
-         "neighbor": "*",
+         "neighbor": "+",
          "switch": [
            {
               "adjective": "diffusible",
