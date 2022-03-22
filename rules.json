@@ -1,0 +1,33 @@
+{
+  "nouns": {
+    "_": {
+      "color": "black",
+      "adjectives": ["diffusible"]
+    },
+    "gas": {
+      "color": "white",
+      "adjectives": ["diffusible", "gaseous"]
+    }
+  },
+  "adjectives": {
+    "gaseous": {
+      "actions": [
+       {
+         "neighbor": "*",
+         "switch": [
+           {
+              "adjective": "diffusible",
+              "prob": 1,
+              "then": {
+                "write": [
+                  { "to": 0, "noun": { "from": 1 }, "dir": { "from": 1 } },
+                  { "to": 1, "noun": { "from": 0 }, "dir": { "from": 0 } }
+                ]
+              }
+           }
+         ]
+       }
+     ]
+   }
+ }
+}
